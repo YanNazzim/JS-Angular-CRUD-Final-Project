@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CensusService } from './census.service';
+import { CensusService } from '../census.service';
 
 @Component({
   selector: 'app-census-edit',
