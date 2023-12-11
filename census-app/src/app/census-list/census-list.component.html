@@ -1,0 +1,23 @@
+<h1>Census Records</h1>
+
+
+<div *ngIF=""errorOccured>
+    <p>{{ errorMessage }}</p>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Year of Census</th>
+            <th>Census Taker Name</th>
+            <th>Number of People</th>
+            <th>Household State</th>
+            <th>Household City</th>
+            <th>Household Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let censusRecord of censusRecords">
+
+        </tr>
+    </tbody>
+</table>
