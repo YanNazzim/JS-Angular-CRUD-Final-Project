@@ -1,1 +1,48 @@
-<p>census-create works!</p>
+<h2>Add New Census Record</h2>
+
+<div>
+  <label>Year of the Census:</label>
+  <input type="text" [(ngModel)]="newRecord.year">
+</div>
+
+<div>
+  <label>Census Taker's Name:</label>
+  <input type="text" [(ngModel)]="newRecord.takerName">
+</div>
+
+<div>
+  <label>Number of People:</label>
+  <input type="text" [(ngModel)]="newRecord.numberOfPeople">
+</div>
+
+<div>
+  <label>Household State:</label>
+  <input type="text" [(ngModel)]="newRecord.householdState">
+</div>
+
+<div>
+  <label>Household City:</label>
+  <input type="text" [(ngModel)]="newRecord.householdCity">
+</div>
+
+<div>
+  <label>Household Street:</label>
+  <input type="text" [(ngModel)]="newRecord.householdAddress.street">
+</div>
+
+<div>
+  <label>Household City:</label>
+  <input type="text" [(ngModel)]="newRecord.householdAddress.city">
+</div>
+
+<div>
+  <label>Household State:</label>
+  <input type="text" [(ngModel)]="newRecord.householdAddress.state">
+</div>
+
+<div>
+  <label>Zip Code:</label>
+  <input type="text" [(ngModel)]="newRecord.householdAddress.zipCode">
+</div>
+
+<button (click)="createRecord()">Add Record</button>

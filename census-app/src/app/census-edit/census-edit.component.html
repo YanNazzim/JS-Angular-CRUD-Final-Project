@@ -1,1 +1,48 @@
-<p>census-edit works!</p>
+<h2>Edit Census Record</h2>
+
+<div>
+  <label>Year of the Census:</label>
+  <input type="text" [(ngModel)]="recordData.year">
+</div>
+
+<div>
+  <label>Census Taker's Name:</label>
+  <input type="text" [(ngModel)]="recordData.takerName">
+</div>
+
+<div>
+  <label>Number of People:</label>
+  <input type="text" [(ngModel)]="recordData.numberOfPeople">
+</div>
+
+<div>
+  <label>Household State:</label>
+  <input type="text" [(ngModel)]="recordData.householdState">
+</div>
+
+<div>
+  <label>Household City:</label>
+  <input type="text" [(ngModel)]="recordData.householdCity">
+</div>
+
+<div>
+  <label>Household Street:</label>
+  <input type="text" [(ngModel)]="recordData.householdAddress.street">
+</div>
+
+<div>
+  <label>Household City:</label>
+  <input type="text" [(ngModel)]="recordData.householdAddress.city">
+</div>
+
+<div>
+  <label>Household State:</label>
+  <input type="text" [(ngModel)]="recordData.householdAddress.state">
+</div>
+
+<div>
+  <label>Zip Code:</label>
+  <input type="text" [(ngModel)]="recordData.householdAddress.zipCode">
+</div>
+
+<button (click)="updateRecord()">Update Record</button>
